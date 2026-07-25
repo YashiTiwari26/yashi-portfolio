@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Yashi Tiwari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="navbar">
+    <a class="brand" href="index.html">
+      <span class="badge">YT</span>
+      <span class="name">Yashi Tiwari</span>
+    </a>
+    <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
+    <ul class="navlinks" id="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="techstack.html">Tech Stack</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="certifications.html">Certifications</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="page-header">
+    <div class="eyebrow">Featured Projects</div>
+    <h1 class="page-title">Projects built across code,<br>data, and hardware.</h1>
+  </div>
+
+  <div class="filter-row">
+    <button class="filter-pill active" data-filter="all">All</button>
+    <button class="filter-pill" data-filter="software">Software</button>
+    <button class="filter-pill" data-filter="web">Web</button>
+    <button class="filter-pill" data-filter="hardware">Hardware</button>
+  </div>
+
+  <div style="padding-bottom:72px;">
+
+    <div class="project" data-tags="software">
+      <div class="project-media">
+        <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="#3b4d78" stroke-width="1.4">
+          <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/>
+        </svg>
+      </div>
+      <div class="project-body">
+        <div class="project-head">
+          <div class="project-title">Library Management System</div>
+          <div class="project-stack">Java &middot; Java Swing &middot; MySQL</div>
+        </div>
+        <ul>
+          <li>Developed a Library Management System to manage books, users, and issue/return operations.</li>
+          <li>Designed a user-friendly Java Swing interface for efficient library management.</li>
+          <li>Implemented CRUD operations for books and student records, with MySQL integration for secure data storage and retrieval.</li>
+          <li>Added features such as book search, issue/return management, and record updates.</li>
+        </ul>
+        <div class="chip-row" style="margin-top:14px;"><span class="chip">Java</span><span class="chip">Java Swing</span><span class="chip">MySQL</span></div>
+        <div class="project-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>Software Project</div>
+      </div>
+    </div>
+
+    <div class="project" data-tags="web">
+      <div class="project-media">
+        <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="#3b4d78" stroke-width="1.4">
+          <rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/>
+        </svg>
+      </div>
+      <div class="project-body">
+        <div class="project-head">
+          <div class="project-title">Typing Speed Tester</div>
+          <div class="project-stack">HTML &middot; CSS &middot; JavaScript</div>
+        </div>
+        <ul>
+          <li>Developed a responsive typing speed tester.</li>
+          <li>Calculated WPM and typing accuracy in real time.</li>
+          <li>Added error highlighting and restart functionality.</li>
+          <li>Optimized typing input for better performance.</li>
+        </ul>
+        <div class="chip-row" style="margin-top:14px;"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+        <div class="project-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Web Project</div>
+      </div>
+    </div>
+
+    <div class="project" data-tags="hardware">
+      <div class="project-media">
+        <img src="drone.jpg" alt="Yashi's quadcopter drone build with flight controller and RF modules">
+      </div>
+      <div class="project-body">
+        <div class="project-head">
+          <div class="project-title">Quadcopter Drone with Jamming System</div>
+          <div class="project-stack">Arduino &middot; Embedded Systems</div>
+        </div>
+        <ul>
+          <li>Worked on development of a quadcopter drone integrated with a basic signal jamming mechanism.</li>
+          <li>Assisted in drone assembly, motor control setup, and electronic integration.</li>
+          <li>Gained practical exposure to embedded systems and wireless communication.</li>
+          <li>Tested and troubleshot hardware components for improved performance.</li>
+        </ul>
+        <div class="chip-row" style="margin-top:14px;"><span class="chip">Arduino</span><span class="chip">Embedded Systems</span><span class="chip">RF/Wireless</span></div>
+        <div class="project-badge"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>Hardware Project</div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span class="fl">Orai, Uttar Pradesh</span>
+    <span class="fl"><a href="contact.html">Get in touch →</a></span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
