@@ -5,7 +5,7 @@ A modern and responsive personal portfolio website showcasing my projects, techn
 ## Live Demo
 
 🔗 Add your deployed portfolio link here
-
+https://yashitiwari26.github.io/yashi-portfolio/
 ---
 
 ## Portfolio Preview
